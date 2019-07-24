@@ -10,7 +10,7 @@ class AuthorsController < ApplicationController
     if @author = Author.create!(author_params)
       redirect_to author_path(@author)
     else
-      render :edit
+      render :new
     end
   end
 
